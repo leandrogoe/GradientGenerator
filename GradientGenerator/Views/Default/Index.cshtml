@@ -1,0 +1,119 @@
+﻿
+@{
+ViewBag.Title = "Index";
+}
+<h1> Yet another gradient generator! </h1>
+<br />
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-4">
+
+						<table class="gradientSettings">
+
+							<tr>
+								<td>Gradient Type: </td>
+								<td>
+									<div id='gradientType' class="dropdown">
+										<button id='gradientTypeButton' class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+											Radial Gradient <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" id="gradientTypeList">
+											<li><a href="#">Radial Gradient</a></li>
+											<li><a href="#">Linear Gradient</a></li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Gradient Direction: </td>
+								<td>
+									<div id='directionRadial' class="dropdown">
+										<button id='directionRadialButton' class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+											Top <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" id="directionRadialList">
+											<li><a href="#">Center</a></li>
+											<li><a href="#">Top</a></li>
+											<li><a href="#">Top Right</a></li>
+											<li><a href="#">Right</a></li>
+											<li><a href="#">Bottom Right</a></li>
+											<li><a href="#">Bottom</a></li>
+											<li><a href="#">Bottom Left</a></li>
+											<li><a href="#">Left</a></li>
+											<li><a href="#">Top Left</a></li>
+										</ul>
+									</div>
+
+									<div id='directionLinear' class="dropdown" style="display: none;">
+										<button id='directionLinearButton' class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+											Top <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" id="directionLinearList">
+											<li><a href="#">Top</a></li>
+											<li><a href="#">Top Right</a></li>
+											<li><a href="#">Right</a></li>
+											<li><a href="#">Bottom Right</a></li>
+											<li><a href="#">Bottom</a></li>
+											<li><a href="#">Bottom Left</a></li>
+											<li><a href="#">Left</a></li>
+											<li><a href="#">Top Left</a></li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td> Color 1: </td>
+								<td>
+									<div id="customWidget2" class="customWidget">
+										<div id="colorSelector2" class="colorSelector"><div style="background-color: #eb127b"></div></div>
+										<div id="colorPickerHolder2" class="colorpickerHolder">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td> Color 2: </td>
+								<td>
+									<div id="customWidget1" class="customWidget">
+										<div id="colorSelector1" class="colorSelector"><div style="background-color: #7121cc"></div></div>
+										<div id="colorPickerHolder1" class="colorpickerHolder">
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-sm-4">
+
+						<div id="cssGradientDiv" class="rounded" style="height:200px; width:100%;"></div>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="col-sm-8">
+						<br />
+						<div class="rounded" style="height:150px; width:100%;background:#d3ebd3 ">
+							<div id="cssGradientText" style="margin: 20px;display: inline-block;"></div>
+						</div>
+                        <br />
+                        <form id="publishform" action="">
+                            <button id="publishButton" class="btn btn-primary">Publish!</button>
+                        </form>
+                        <br />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div id="messages" class="messages"/>
+		</div>
+	</div>
+
+	
+</div>
+
+
