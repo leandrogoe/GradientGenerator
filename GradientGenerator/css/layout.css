@@ -83,6 +83,14 @@
     overflow-y: auto;
 }
 
+.gradientText {
+    height:150px; 
+    width:100%;
+    background:#d3ebd3;
+    overflow-x: auto;
+}
+
+
 body {
 	font-family: "Corbel", Corbel, serif;
     background-color: transparent;
